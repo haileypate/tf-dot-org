@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: haileypate/tf-dot-org
+  name: git-gateway
 
 # These lines should *not* be indented
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
