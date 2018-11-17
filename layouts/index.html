@@ -15,9 +15,7 @@ index dot html
         <h1>Recent Posts</h1>
         {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
         {{ range (first $n_posts $section ) }}
-          <div class="summary-wrapper">
-            {{ partial "summary-with-image.html" . }}
-          </div>
+            {{ partial "post/summary-with-image.html" . }}
         {{ end }}{{/* range */}}
       </section><!--recent-posts-->
 

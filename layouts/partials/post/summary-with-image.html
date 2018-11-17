@@ -1,0 +1,15 @@
+{{ $featured_image := .Params.featured_image }}
+  
+<article class="mdc-card post-card">
+  <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0">
+    {{ if .Params.featured_image }}
+    {{ $featured_image := (trim $featured_image "/") | absURL }}
+    <div class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;{{ $featured_image }}&quot;);"></div>
+    {{ end }}
+    <div class="demo-card__primary">
+        <h2 class="demo-card__title mdc-typography--headline6">{{ .Title }}</h2>
+        <!-- <h3 class="demo-card__subtitle mdc-typography--subtitle2">by Kurt Wagner</h3> -->
+      </div>
+    <div class="demo-card__secondary mdc-typography--body2">{{ .Summary }}</div>
+  </div>
+</article>

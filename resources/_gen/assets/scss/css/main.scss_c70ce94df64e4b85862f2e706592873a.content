@@ -1081,5 +1081,5 @@ a.mdc-list-item {
   display: flex; }
 
 .post-card {
-  height: 350px;
-  width: 350px; }
+  width: 350px;
+  margin: 48px 0; }
