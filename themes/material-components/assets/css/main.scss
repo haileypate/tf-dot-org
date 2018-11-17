@@ -1,0 +1,19 @@
+@import '../../node-modules/@material/typography/mdc-typography.scss';
+@import '../../node-modules/@material/top-app-bar/mdc-top-app-bar.scss';
+@import '../../node-modules/@material/list/mdc-list.scss';
+@import '../../node-modules/@material/card/mdc-card.scss';
+
+
+.site-header {
+  flex-direction: row;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.post-card {
+  height: 350px;
+  width: 350px;
+}
+

@@ -16,6 +16,8 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Post content", name: "body", widget: "markdown"}
+      - {label: "Front page summary", name: "home-summary", widget: "markdown"}
+      - {label: "Blog index summary", name: "blog-summary", widget: "markdown"}
   - name: "people" # Used in routes, e.g., /admin/collections/blog
     label: "people" # Used in the UI
     folder: "content/people" # The path to the folder where the documents are stored
