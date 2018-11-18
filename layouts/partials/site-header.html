@@ -2,10 +2,10 @@
 {{ if $featured_image }}
   {{ $featured_image := (trim $featured_image "/") | absURL }}
   <header style="background-image: url('{{ $featured_image }}');">
-    {{ partial "site-navigation.html" .}}
+    {{ partial "site-header-bar.html" .}}
   </header>
 {{ else }}
   <header>
-    {{ partial "site-navigation.html" . }}
+    {{ partial "site-header-bar.html" . }}
   </header>
 {{ end }}

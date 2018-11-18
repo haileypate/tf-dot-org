@@ -1,9 +1,16 @@
+$mdc-theme-primary: #DEDEDE;
+$mdc-theme-secondary: #311B92;
+$mdc-theme-on-primary: black;
+$mdc-theme-on-secondary: white;
+
+
 @import '../../node-modules/@material/typography/mdc-typography.scss';
 @import '../../node-modules/@material/top-app-bar/mdc-top-app-bar.scss';
 @import '../../node-modules/@material/list/mdc-list.scss';
 @import '../../node-modules/@material/card/mdc-card.scss';
 @import '../../node-modules/@material/button/mdc-button.scss';
 @import '../../node-modules/@material/icon-button/mdc-icon-button.scss';
+@import '../../node-modules/@material/theme/mdc-theme.scss';
 
 
 .site-header {
@@ -14,6 +21,9 @@
   display: flex;
 }
 
+.site-logo {
+  max-height: 50px;
+}
 .post-card {
   width: 30%;
   margin: 48px 0; }
