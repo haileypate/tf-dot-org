@@ -10,6 +10,12 @@
         <h2 class="demo-card__title mdc-typography--headline6">{{ .Title }}</h2>
         <!-- <h3 class="demo-card__subtitle mdc-typography--subtitle2">by Kurt Wagner</h3> -->
       </div>
-    <div class="demo-card__secondary mdc-typography--body2">{{ .Summary }}</div>
+    <div class="demo-card__secondary mdc-typography--body2">{{ .Params.post_summary }}</div>
+    <div class="mdc-card__actions">
+      <div class="mdc-card__action-buttons">
+        <button class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded">Read post</button>
+      </div>
+
+    </div>
   </div>
 </article>

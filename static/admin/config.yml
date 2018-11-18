@@ -16,7 +16,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "featured_image", widget: "image"}
       - {label: "Post content", name: "body", widget: "markdown"}
-      - {label: "Front page summary", name: "card-summary", widget: "markdown"}
+      - {label: "Front page summary", name: "post_summary", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "string"}
       
   - name: "people" # Used in routes, e.g., /admin/collections/blog

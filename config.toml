@@ -4,4 +4,4 @@ title = "My New Hugo Site"
 theme = "material-components"
 
 [params]
-  mainSections = ["posts"]
+  mainSections = ["posts", "people"]

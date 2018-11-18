@@ -2,6 +2,8 @@
 @import '../../node-modules/@material/top-app-bar/mdc-top-app-bar.scss';
 @import '../../node-modules/@material/list/mdc-list.scss';
 @import '../../node-modules/@material/card/mdc-card.scss';
+@import '../../node-modules/@material/button/mdc-button.scss';
+@import '../../node-modules/@material/icon-button/mdc-icon-button.scss';
 
 
 .site-header {
@@ -13,6 +15,31 @@
 }
 
 .post-card {
-  width: 350px;
+  width: 30%;
   margin: 48px 0; }
+
+.recent-posts .card-set-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero {
+  background-image: url('/images/uploads/dac-group-1.jpg');
+  position: relative;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+.hero-wrapper {
+  display: block;
+  background-color: whitesmoke;
+}
+
+.hero-text {
+  display: inline-block;
+}
 

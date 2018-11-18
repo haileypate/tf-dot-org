@@ -20,14 +20,14 @@
 // THE SOFTWARE.
 //
 
-@import "@material/elevation/mixins";
-@import "@material/ripple/mixins";
-@import "@material/rtl/mixins";
-@import "@material/theme/functions";
-@import "@material/theme/mixins";
-@import "@material/typography/mixins";
-@import "@material/shape/mixins";
-@import "@material/shape/functions";
+@import "../elevation/mixins";
+@import "../ripple/mixins";
+@import "../rtl/mixins";
+@import "../theme/functions";
+@import "../theme/mixins";
+@import "../typography/mixins";
+@import "../shape/mixins";
+@import "../shape/functions";
 @import "./variables";
 
 @mixin mdc-button-filled-accessible($container-fill-color) {

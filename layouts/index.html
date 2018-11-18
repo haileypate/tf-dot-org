@@ -1,32 +1,33 @@
 {{ define "main" }}
-index dot html
-  <article class="">
-    {{ .Content }}
-  </article>
 
-  {{ $mainSections := .Site.Params.mainSections }}
-  {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
+  {{ $post_section := where .Site.RegularPages "Section" "posts" }}
+  {{ $people_section := where .Site.RegularPages "Section" "people" }}
 
-      <section class="hero">
-        <p>TF mission text goes here</p>
-      </section>
 
-      <section class="recent-posts">
-        <h1>Recent Posts</h1>
-        {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-        {{ range (first $n_posts $section ) }}
-            {{ partial "post/summary-with-image.html" . }}
-        {{ end }}{{/* range */}}
-      </section><!--recent-posts-->
+      <div class="hero-wrapper">
+        <div class="hero">&nbsp;</div>
+        <p class="hero-text">TF mission text goes here</p>
+      </div><!--hero-wrapper-->
 
       <section id="about">
         <p>about tony (summary and link to full story)</p>
         <p>desc our mission, etc</p>
       </section>
 
-      <section id="board-of-directors"></section>
+      <section class="recent-posts">
+        <h1>Recent Posts</h1>
+          <div class="card-set-wrapper">
+            {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
+            {{ range (first $n_posts $post_section ) }}
+                {{ partial "post/summary-with-image.html" . }}
+            {{ end }}{{/* range */}}
+          </div><!--card-set-wrapper-->
+      </section><!--recent-posts-->
 
-      <section id="volunteers"></section>
+      <section id="our-team">
+        <div id="board-of-directors"></div>
+        <div id="volunteers"></div>
+      </section>
 
       <section id="subscribe"></section>
 
