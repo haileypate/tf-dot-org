@@ -9,21 +9,37 @@ $mdc-theme-on-secondary: white;
 @import '../../node-modules/@material/list/mdc-list.scss';
 @import '../../node-modules/@material/card/mdc-card.scss';
 @import '../../node-modules/@material/button/mdc-button.scss';
+@import '../../node-modules/@material/tab/mdc-tab.scss';
 @import '../../node-modules/@material/icon-button/mdc-icon-button.scss';
 @import '../../node-modules/@material/theme/mdc-theme.scss';
+@import '../../node-modules/@material/drawer/mdc-drawer.scss';
 
 
 .site-header {
   flex-direction: row;
 }
 
+.header-nav-wrapper {
+  justifY-content: flex-end;
+}
+
 .header-nav {
   display: flex;
+}
+
+.wide-screen-only {
+  padding-top: 42px;
+  visibility: visible;
+}
+
+.show-drawer {
+  visibility: hidden;
 }
 
 .site-logo {
   max-height: 50px;
 }
+
 .post-card {
   width: 30%;
   margin: 48px 0; }
@@ -53,3 +69,8 @@ $mdc-theme-on-secondary: white;
   display: inline-block;
 }
 
+@media (max-width: 801px) {
+  .show-drawer {
+    visibility: show;
+  }
+}
