@@ -1,16 +1,17 @@
-<div class="mdc-top-app-bar site-header" role="navigation">
+<div class="mdc-top-app-bar--dense site-header" role="navigation">
 
-  <div class="mdc-top-app-bar__section site-logo-wrapper">
+  <div class="mdc-top-app-bar__section header-section-left">
     <button class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded show-drawer wide-screen-only">menu</button>
-    <a class="mdc-top-app-bar__title" href="{{ .Site.BaseURL }}" class="site-logo">
+    <a class="mdc-top-app-bar__title site-logo-wrapper" href="{{ .Site.BaseURL }}">
       <img class="site-logo" src="{{.Site.BaseURL}}images/tf-logo-on-light.png" alt="Tony Foundation">
     </a>
-  </div><!--site-logo-wrapper-->
+  </div><!--header-section-left-->
 
-  <nav class="mdc-top-app-bar__section mdc-top-app-bar__section--align-right header-nav-wrapper">
-    <ul class="mdc-list header-nav">
-      <li class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1">
-        <a class="mdc-tab__content nav-item-no-icon wide-screen-only">
+  <nav class="mdc-top-app-bar__section mdc-top-app-bar__section--align-right header-section-right">
+    <ul class="header-nav">
+
+      <li class="mdc-tab mdc-tab--stacked wide-screen-only" role="tab" aria-selected="false" tabindex="-1">
+        <a class="mdc-tab__content">
           <!-- <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span> -->
           <span class="mdc-tab__text-label">About</span>
         </a>
@@ -19,8 +20,9 @@
         </span>
         <span class="mdc-tab__ripple"></span>
       </li>
-      <li class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1">
-        <a class="mdc-tab__content nav-item-no-icon wide-screen-only">
+
+      <li class="mdc-tab mdc-tab--stacked wide-screen-only" role="tab" aria-selected="false" tabindex="-1">
+        <a class="mdc-tab__content">
           <!-- <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span> -->
           <span class="mdc-tab__text-label">Blog</span>
         </a>
@@ -29,8 +31,9 @@
         </span>
         <span class="mdc-tab__ripple"></span>
       </li>
-      <li class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1">
-        <a class="mdc-tab__content wide-screen-only">
+
+      <li class="mdc-tab mdc-tab--stacked wide-screen-only" role="tab" aria-selected="false" tabindex="-1">
+        <a class="mdc-tab__content">
           <!-- <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span> -->
           <span class="mdc-tab__text-label">Events</span>
         </a>
@@ -39,9 +42,10 @@
         </span>
         <span class="mdc-tab__ripple"></span>
       </li>
+
       <li class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1">
         <a class="mdc-tab__content">
-          <svg class = mdc-tab__icon width="120%" height="120%" viewBox="0 0 283 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+          <svg class="mdc-tab__icon" width="100%" height="100%" viewBox="0 0 283 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
             <g>
               <path d="M26.292,76.968l125,-62l32,121l-139,9l-18,-68Z"/>
               <path d="M0.292,89.968c-3,-13 18,-19 22,-5l14,56c4,13 -17,19 -21,5l-15,-56Z" style="fill-rule:nonzero;"/>
@@ -59,6 +63,7 @@
         </span>
         <span class="mdc-tab__ripple"></span>
       </li>
+
       <li class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1">
         <a class="mdc-tab__content">
             <svg class="mdc-tab__icon" width="80%" height="80%" viewBox="0 0 36 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">

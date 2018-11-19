@@ -17,14 +17,20 @@ $mdc-theme-on-secondary: white;
 
 .site-header {
   flex-direction: row;
+  align-items: center;
 }
 
-.header-nav-wrapper {
+.header-section-left {
+  min-width: 250px;
+}
+
+.header-section-right {
   justifY-content: flex-end;
 }
 
 .header-nav {
   display: flex;
+  margin: 0;
 }
 
 .wide-screen-only {
@@ -34,11 +40,20 @@ $mdc-theme-on-secondary: white;
 
 .show-drawer {
   visibility: hidden;
+  width: 0;
+}
+
+.site-logo-wrapper {
+  display: flex;
+  justify-content: space-around;
+  max-width: 250px;
 }
 
 .site-logo {
   max-height: 50px;
+  
 }
+
 
 .post-card {
   width: 30%;

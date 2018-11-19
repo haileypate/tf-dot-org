@@ -1986,20 +1986,31 @@ a.mdc-list-item {
     opacity: 0; }
 
 .site-header {
-  flex-direction: row; }
+  flex-direction: row;
+  align-items: center; }
 
-.header-nav-wrapper {
+.header-section-left {
+  min-width: 250px; }
+
+.header-section-right {
   justifY-content: flex-end; }
 
 .header-nav {
-  display: flex; }
+  display: flex;
+  margin: 0; }
 
 .wide-screen-only {
   padding-top: 42px;
   visibility: visible; }
 
 .show-drawer {
-  visibility: hidden; }
+  visibility: hidden;
+  width: 0; }
+
+.site-logo-wrapper {
+  display: flex;
+  justify-content: space-around;
+  max-width: 250px; }
 
 .site-logo {
   max-height: 50px; }
